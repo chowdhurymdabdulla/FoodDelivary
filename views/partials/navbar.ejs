@@ -1,0 +1,30 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Update 24x7</a><a class="navbar-brand" style="color: lightgrey" href="/admin">Admin</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/api/addNews">NewsForm</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/api/newsList" >EditNews</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <!-- 1. parse username from login page
+        2. display username in this ejs -->
+        <a class="nav-link" style="color: white"><span style="color: lightgrey">User Name: </span><%= user.name %> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: white; margin-right: 10px"><span style="color: lightgrey">Email: </span><%= user.email %> </a>
+      </li>
+      <li class="nav-item">
+        <a href="/admin"><button class="btn btn-outline-light">Logout</button></a>
+      </li>
+    </ul>
+  </div>
+</nav>

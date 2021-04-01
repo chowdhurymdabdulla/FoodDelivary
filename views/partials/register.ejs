@@ -1,0 +1,27 @@
+<main class="d-flex align-items-center min-vh-100 py-3 py-md-0"> 
+    <div class="container" style="display: flex; align-items: center; justify-content: center;"> 
+            <div class="card login-card" style="width:30rem; margin-top: -5rem"> 
+                    <div class="card-body"> 
+                        <p class="login-card-description">Register a new User</p > 
+                            <form name="form1" action="/auth/register" method="POST"> 
+                                <div class="form-group"> 
+                                    <label for="name" class="sr-only">Name:</label> 
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required> 
+                                </div> 
+                                <div class="form-group"> 
+                                    <label for="email" class="sr-only">Email:</label> 
+                                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required> 
+                                </div> 
+                                <div class="form-group"> 
+                                    <label for="password" class="sr-only">Password:</label> 
+                                    <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password" required> 
+                                </div> 
+                                
+                                <button type="submit" class="btn btn-block login-bt mb-4">Register</button> 
+                                <p class="login-card-footer-text">Go back to <a href="/" class="text-reset">login page</a ></p > 
+                        
+                            </form>
+                    </div> 
+            </div> 
+    </div>        
+</main>

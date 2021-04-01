@@ -1,0 +1,160 @@
+<body data-new-gr-c-s-check-loaded="14.1001.0" data-gr-ext-installed="">
+
+  <div class="container">
+
+
+    <div class="jumbotron p-3 p-md-5 text-white rounded"
+      style="
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://images.unsplash.com/photo-1616514169928-a1e40c6f791c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 font-italic">Guardiola: Aguero conquered England like Messi in Spain, Maradona in Italy
+        </h1>
+        <p class="lead my-3">Manchester City manager Pep Guardiola said that Sergio Aguero has conquered the Premier
+          League in the way Barcelona's Lionel Messi did it in La Liga and Diego Maradona did for Napoli in Serie A.</p>
+        <p class="lead mb-0"><a
+            href="https://www.espn.com/soccer/manchester-city/story/4348933/guardiola-aguero-conquered-england-like-messi-in-spainmaradona-in-italy"
+            class="text-white font-weight-bold">Continue reading...</a></p>
+      </div>
+    </div>
+
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+
+      <!-- <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Euro 2020</a>
+              </h3>
+              <div class="mb-1 text-muted">March 31</div><br>
+              <p class="card-text mb-auto">How can the tournament survive the COVID-19 crisis?</p>
+              <a href="https://www.espn.com/soccer/uefa-european-championship/story/4282074/clock-ticking-for-euro-2020-how-can-the-tournament-survive-the-covid-19-crisis">Continue reading</a> -->
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th><img style="max-width: 5rem; max-height: 5rem;" src="<%=league.soccer_results.thumbnail%>">
+              <%=league.soccer_results.leagueName %> Results
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <% for(var i=1; i < league.soccer_results.games.length; i++) { %>
+              <td>
+                <a href="<%=league.soccer_results.games[i-1].link %>">
+                  <img style="float: right; max-height: 7rem; max-width: 15rem;"
+                  src="<%=league.soccer_results.games[i-1].logo %>">
+                </a>
+
+                <small>Matchday: <%=league.soccer_results.games[i-1].matchDay %> &nbsp;&nbsp;
+                    Time: <%=league.soccer_results.games[i-1].status %> &nbsp;&nbsp;
+                      Date: <%=league.soccer_results.games[i-1].date %></small> <br>
+                      
+                <!-- If first team was the winner -->
+                <% if (league.soccer_results.games[i-1].teams[0].score > league.soccer_results.games[i-1].teams[1].score)
+                  { %>
+                  <img style="max-width: 10px; max-height: 10px;"
+                    src="<%=league.soccer_results.games[i-1].teams[0].thumbnail %>">
+                  &nbsp; <%=league.soccer_results.games[i-1].teams[0].name %> &nbsp;&nbsp;
+                    <%=league.soccer_results.games[i-1].teams[0].score %> ◄ <br>
+                      <img style="max-width: 10px; max-height: 10px;"
+                        src="<%=league.soccer_results.games[i-1].teams[1].thumbnail %>">
+                      &nbsp; <%=league.soccer_results.games[i-1].teams[1].name %> &nbsp;&nbsp;
+                        <%=league.soccer_results.games[i-1].teams[1].score %>
+
+                          <!-- If second team was the winner -->
+
+                          <% } else if (league.soccer_results.games[i-1].teams[1].score > league.soccer_results.games[i-1].teams[0].score){ %>
+                            <img style="max-width: 10px; max-height: 10px;"
+                              src="<%=league.soccer_results.games[i-1].teams[0].thumbnail %>">
+                            &nbsp; <%=league.soccer_results.games[i-1].teams[0].name %> &nbsp;&nbsp;
+                              <%=league.soccer_results.games[i-1].teams[0].score %> <br>
+                                <img style="max-width: 10px; max-height: 10px;"
+                                  src="<%=league.soccer_results.games[i-1].teams[1].thumbnail %>">
+                                &nbsp; <%=league.soccer_results.games[i-1].teams[1].name %> &nbsp;&nbsp;
+                                  <%=league.soccer_results.games[i-1].teams[1].score %> ◄
+
+                                    <!-- If draw -->
+                                    <% } else { %>
+                                      <img style="max-width: 10px; max-height: 10px;"
+                                        src="<%=league.soccer_results.games[i-1].teams[0].thumbnail %>">
+                                      &nbsp; <%=league.soccer_results.games[i-1].teams[0].name %> &nbsp;&nbsp;
+                                        <%=league.soccer_results.games[i-1].teams[0].score %> <br>
+                                          <img style="max-width: 10px; max-height: 10px;"
+                                            src="<%=league.soccer_results.games[i-1].teams[1].thumbnail %>">
+                                          &nbsp; <%=league.soccer_results.games[i-1].teams[1].name %> &nbsp;&nbsp;
+                                            <%=league.soccer_results.games[i-1].teams[1].score %>
+                                    <% } %>
+              </td>
+              
+                <% if (i % 2==0) {%>
+          </tr>
+          <tr>
+            <% }} %>
+        </tbody>
+      </table>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-3 mb-4 font-italic border-bottom">
+            From the Field
+          </h3>
+          <% for(var i=0; i < news.articles.length; i++) { %>
+            <div class="blog-post">
+              
+
+              <h2 class="blog-post-title"><%=news.articles[i].title %></h2>
+              <p class="blog-post-meta"><%=news.articles[i].date %> by 
+                <a href="<%= news.articles[i].link%>"><%=news.articles[i].source %>&nbsp;<i class="fas fa-external-link-alt"></i></a>
+
+              </p>
+              <p><%=news.articles[i].abstract %></p>
+            </div>
+          <% } %>
+        </div><!-- /.blog-main -->
+
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">Highlights</h4>
+            <iframe width="100%" src="http://www.espn.com/core/video/iframe?id=31164938&endcard=false" allowfullscreen
+              frameborder="0"></iframe>
+            <b>Must-Watch Video</b>
+            <p>Denmark's Delaney scores ridiculous scorpion kick in training</p>
+            <hr>
+            <iframe width="100%" src="http://www.espn.com/core/video/iframe?id=4333826&endcard=false" allowfullscreen
+              frameborder="0"></iframe>
+            <b>Fran Kirby back at the top after heart disease</b>
+            <p>Kirby's mindset in 2021 is informed by how, in 2020, her career was nearly taken away. The Chelsea and
+              England star talks to ESPN about her journey.</p>
+            <hr>
+            <iframe width="100%" src="http://www.espn.com/core/video/iframe?id=4263411&endcard=false" allowfullscreen
+              frameborder="0"></iframe>
+            <b>How Barcelona signed Messi, 13, with a napkin</b>
+            <p>On Dec. 14, 2000, Barcelona agreed a deal that would take Lionel Messi to Spain and change the course of
+              soccer history. Here's how they did it.</p>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Soccer Websites</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://www.espn.com/soccer/">ESPN Soccernet</a></li>
+              <li><a href="https://www.goal.com/en">Goal.com</a></li>
+              <li><a href="https://www.nytimes.com/section/sports/soccer">The New York Times Soccer</a></li>
+              <li><a href="https://www.si.com/soccer">Sports Illusatrated Soccer</a></li>
+              <li><a href="https://www.nbcsports.com/soccer">NBC Soccer</a></li>
+              <li><a href="https://www.thescore.com/">The Score</a></li>
+              <li><a href="https://www.ussoccer.com/">US Soccer</a></li>
+            </ol>
+          </div>
+        </aside><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+    </main><!-- /.container -->

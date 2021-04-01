@@ -1,0 +1,34 @@
+{ "articles": [
+    {
+        "title": "Liverpool's Salah on potential La Liga move: 'Maybe one day, yes'",
+        "source": "ESPN",
+        "date":"2021-03-30",
+        "link":"https://www.espn.com/soccer/soccer-transfers/story/4348608/liverpools-salah-on-potential-la-liga-move-maybe-one-dayyes",
+        "sourceLink":"https://www.espn.com/",
+        "abstract": "Liverpool forward Mohamed Salah said he could 'maybe one day' play in Spain, although he added 'it's not up to me' to decide when he leaves the Anfield club. Salah -- whose contract at Liverpool expires in June 2023 -- was talking to Spanish newspaper Marca ahead of the Champions League quarterfinal first leg with Real Madrid next week..."
+    },
+    {
+        "title":"Manchester City's all-time top scorer Sergio Aguero will leave the club at the end of the season",
+        "source":"CNN",
+        "date":"2021-03-30",
+        "link":"https://www.cnn.com/2021/03/30/football/manchester-city-sergio-aguero-exit-spt-intl/index.html",
+        "sourceLink":"https://www.cnn.com/",
+        "abstract":"Sergio Aguero will leave Manchester City when his contract expires at the end of the season, the club has announced. The 32-year-old Argentine, considered to be one of the greatest players in Premier League history, joined from Atletico Madrid in 2011 and went on to win four Premier League titles, one FA Cup and five League Cups..."
+    },
+    {
+        "title":"Manchester United 2021-22 home kit leaked",
+        "source":"The Busby Babe",
+        "date":"2021-03-30",
+        "link":"https://thebusbybabe.sbnation.com/2021/3/30/22358670/manchester-united-2021-22-home-kit-leaked-adidas",
+        "sourceLink":"https://thebusbybabe.sbnation.com/",
+        "abstract":"Manchester United is definitely digging into the nostalgia closet for next year's rumored kit designs. As shown on here last week, the away kit appears to be modeled after the 1991-1993 United away jersey..."
+    },
+    {
+        "title":"TRANSFER NEWS: ARSENAL INTERESTED IN SIGNING JESPER LINDSTROM",
+        "source":"The Hard Tackle",
+        "date":"2021-03-30",
+        "link":"http://www.thehardtackle.com/news/2021/03/31/transfer-news-arsenal-interested-in-signing-jesper-lindstrom/",
+        "sourceLink":"http://www.thehardtackle.com/",
+        "abstract":"According to a report from Jeunes Footeux, Premier League giants Arsenal are plotting a raid on Danish outfit Brondby IF for the signing of Jesper Lindstrom in the summer transfer window..."
+    }
+]}

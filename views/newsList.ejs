@@ -1,0 +1,79 @@
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+    <meta charset="utf-8">   
+    <title>Final Output</title>   
+    
+    <%- include ('./partials/head2') %> 
+    <%- include ('./partials/navbar') %>
+
+    <!-- Database Bootstrap -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    
+    <!-- navbar toggle -->
+    <script>
+
+        $(document).ready(function() {
+            console.log('location.path: ' + location.pathname)
+            $('a[href$="' + location.pathname + '"]').addClass('active');
+        });
+    
+    </script>
+      
+</head>
+<body>  
+    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0"> 
+        <div class="container">
+            <div class="card" style="margin-top: 60px"> 
+                <div class="card-header">News List</div>
+                <div class="card-body" style="margin: 10px 20px;">
+                    <form action="/auth/newsList" method="POST"> 
+                        <div class="form-group row">
+                            <div class="col-md-12">          
+
+                                <table id="myTable" class="table table-striped" >  
+                                    <thead style="background-color: black; color: white">
+                                        <tr>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Published Date</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
+                                        </tr>
+                                    </thead> 
+                                    <tbody>  
+                                        <% news.forEach(function(item, i){ %>
+                                            <tr>
+                                                <!-- <td scope="row"><%= i+1 %></td> -->
+                                                <td class="item-title"><%= item.title %></td>
+                                                <td><%= item.description %></td>
+                                                <td><%= item.date.toLocaleDateString() %></td>
+                                                <td>
+                                                    <a class="edit" title="edit" data-toggle="tooltip" href="/api/newsList/edit/<%= item.title %>">
+                                                        <button type="button" class="btn btn-primary edit-btn">Edit</button></a>
+                                                </td>
+                                                <td>
+                                                    <a class="delete" title="delete" data-toggle="tooltip" href="/api/newsList/delete/<%= item.title %>">
+                                                        <button type="button" class="btn btn-danger edit-btn">Delete</button></a>
+                                                </td>
+                                            </tr>
+                                          <% }); %>
+                                    </tbody>  
+                                </table>  
+                            </div>  
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>  
+<p class="copyright">Copyright &#169; 2021 TCS Batch 5 Group 3. Our group is not responsible for the content of external sites.</p>
+<script>
+$(document).ready(function(){
+    $('#myTable').dataTable();
+});    
+</script>
+</html>  

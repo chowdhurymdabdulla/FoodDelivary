@@ -1,0 +1,119 @@
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.0789218620744!2d-74.33686791976812!3d40.56193437944959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b667532db7fd%3A0x42a56146afbed101!2sTata%20Consultancy%20Services!5e0!3m2!1sen!2sus!4v1617033165984!5m2!1sen!2sus" 
+          width="100%" height="300px" style="margin-top: -17px;" allowfullscreen="" loading="lazy"></iframe>
+
+<main class="d-flex align-items-center">
+   
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="logo.png" alt="update-24x7-logo" style="width: 70%; margin: 3rem 0; height: 12rem;">
+                <div class="row">
+                  <div class="col-auto">
+                    <h4><i class="fas fa-map-marker-alt fa-3x" ></i></h4>
+                  </div>
+                  <div class="col-auto">
+                    <h4><strong>Address</strong></h4>
+                    <h6 class="text-muted">379 Thornall St, Edison, NJ 08837</h6>
+                  </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-auto">
+                      <h4><i class="fas fa-phone fa-2x" ></i></h4>
+                    </div>
+                    <div class="col-auto">
+                      <h4><strong>Phone</strong></h4>
+                      <h6 class="text-muted">xxx-xxx-xxxx</h6>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-auto">
+                      <h4><i class="fas fa-envelope fa-2x" ></i></h4>
+                    </div>
+                    <div class="col-auto">
+                      <h4><strong>Email</strong></h4>
+                      <h6 class="text-muted">xxxx@mail.com</h6>
+                    </div>
+                </div><br>
+                
+                <div class="row">
+                    <div class="col-auto">
+                      <h4><i class="fab fa-twitter-square fa-2x" "></i></h4>
+                    </div>
+                    <div class="col-auto">
+                      <h4><strong>Twitter</strong></h4>
+                      <h6 class="text-muted">@tcs</h6>
+                    </div>
+                </div><br>
+
+                <!-- <div class="row">
+                    <div class="col-auto">
+                      <h4><i class="fab fa-facebook-square fa-2x" ></i></h4>
+                    </div>
+                    <div class="col-auto">
+                      <h4><strong>Facebook</strong></h4>
+                      <h6 class="text-muted">@xxxx.com</h6>
+                    </div>
+                </div><br> -->
+                <div class="row">
+                    <div class="col-auto">
+                      <h4><i class="fab fa-linkedin fa-2x" ></i></h4>
+                    </div>
+                    <div class="col-auto">
+                      <h4><strong>LinkedIn</strong></h4>
+                      <h6 class="text-muted">@xxxx.com</h6>
+                    </div>
+                </div><br>
+                
+                <!-- <p><strong>About TCS:</strong>  Tata Consultancy Services (TCS) is an Indian multinational information technology (IT) services and c</p> -->
+            </div>
+            <div class="col">
+
+                <div style="margin-top: 100px">
+
+                    <div style="text-align: center;"><h4><strong>Contact Us</strong></h4></div>
+                    <div class="card-body" style="margin: 10px 20px;">
+                        <form action="/api/sendEmail" method="POST"> 
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="fName"><strong>First Name</strong></label>
+                                    <input type="text" class="form-control" id="fName" name="fName" placeholder="Insert first name" required autofocus>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="lName"><strong>Last Name</strong></label>
+                                    <input type="text" class="form-control" id="lName" name="lName" placeholder="Insert last name" required >
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="email"> <strong>Email</strong></label>
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="Insert your email address" required >
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="description"><strong>Description</strong></label>
+                                    <textarea class="form-control" id="description" name="description" placeholder="Insert your description" style="height: 100px;" ></textarea>
+                                    <!-- <textarea style="height: 100px;" class="form-control" id="description" name="description">
+                                    </textarea> -->
+                                </div>
+                            </div>
+                        
+        
+                            <button type="submit" class="btn btn-block btn-primary mb-4" style="margin-top: 2rem;">Send email</button>
+                            <input type="reset" value="Reset" class="btn btn-block btn-danger">
+                            
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+    </div>
+</main>
+

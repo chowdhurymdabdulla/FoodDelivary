@@ -1,0 +1,340 @@
+<main class="align-items-center"> 
+    <!-- COVID gif -->
+    <video width="100%" autoplay muted loop style="margin-top: -17px">
+        <source src="https://big.assets.huffingtonpost.com/athena/files/2020/04/01/5e84eda1c5b6f55ebf473553.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <!-- Headlines -->
+        <br><br><h4>TODAY'S HEADLINES</h4><hr style="border-color: black">
+            <div class="row" >
+                <!-- 1 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="<%=news[0].urlImage%>" alt="Card image cap" style="width:318px; height:200px;">
+                        <div class="card-body">
+                        <h5 class="card-title"><%=news[0].title%> </h5>
+                        
+                        <a id="view" onclick="show1()" class="btn btn-outline-dark">View Details</a>
+
+                        <script>
+                            function show1() {
+                                var newsTitle = "<%=news[0].title%>"
+                                document.getElementById("title").innerHTML = newsTitle;
+                                var newsDetails = "<%=news[0].description%>"
+                                document.getElementById("details").innerHTML = newsDetails;
+                            }
+                        </script>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="<%=news[1].urlImage%>" alt="Card image cap" style="width:318px; height:200px;">
+                        <div class="card-body">
+                        <h5 class="card-title"><%=news[1].title%></h5>
+                        <a id="view" onclick="show2()" class="btn btn-outline-dark">View Details</a>
+                        <!-- <a href="<%=news[1].url %>" class="btn btn-outline-dark" style="color: black">View Details <i class="fas fa-external-link-alt"></i></a> -->
+                        <script>
+                            function show2() {
+                                var newsTitle = "<%=news[1].title%>"
+                                document.getElementById("title").innerHTML = newsTitle;
+                                var newsDetails = "<%=news[1].description%>"
+                                document.getElementById("details").innerHTML = newsDetails;
+                            }
+                        </script>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="<%=news[2].urlImage%>" alt="Card image cap" style="width:318px; height:200px;">
+                        <div class="card-body">
+                        <h5 class="card-title"><%=news[2].title%></h5>
+                        <!-- <p class="card-text"><%=news[2].description%></p> -->
+                        <a id="view" onclick="show3()" class="btn btn-outline-dark">View Details</a>
+                        <!-- <a href="<%=news[2].url %>" class="btn btn-outline-dark" style="color: black">View Details <i class="fas fa-external-link-alt"></i></a> -->
+                        <script>
+                            function show3() {
+                                var newsTitle = "<%=news[2].title%>"
+                                document.getElementById("title").innerHTML = newsTitle;
+                                var newsDetails = "<%=news[2].description%>"
+                                document.getElementById("details").innerHTML = newsDetails;
+                            }
+                        </script>
+                    </div>
+                </div>
+            
+                </div>
+                
+                <div class="container">
+                    <br>
+                    <h2 class="blog-post-title"><span id="title"></span></h2>
+                    <p><span id="details"></span></p>
+                </div>
+            </div>
+        
+               
+        
+        <br><br><h4>TODAY'S LATEST NEWS</h4><hr style="border-color: black">
+
+        <div class="row">
+            
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">COVID-19 vaccinations might become mandatory at colleges and universities</h2>
+                        <p class="blog-post-meta">March 30, 2021 by <a href="https://www.foxnews.com/person/b/stephanie-bennett">Stephanie Bennett </a>
+                            <a href="https://www.foxnews.com/us/covid-19-vaccinations-might-become-mandatory-at-colleges-and-universities"><i class="fas fa-external-link-alt"></i></a></p>
+                        <script type="text/javascript" src="https://video.foxnews.com/v/embed.js?id=6245549755001&w=466&h=263"  style="max-width:100%; min-width: 100%"></script>
+                        <br><br>
+                        <p>PHOENIX, ARIZ.-- – As college campuses target the fall semester for a return to "normal" learning, a new item will likely be added to the back-to-school checklist.</p>
+                        <p>Proof of COVID-19 vaccinations might become mandatory for enrollment at U.S. colleges and universities come fall with more and more states opening up the vaccine pool to those 16 and above.</p>
+                        <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2021/03/1862/1048/AP21078805083699.jpg?ve=1&tl=1" alt="covid-19-vaccine-in-university-img" style="max-width:100%;"><br><br>
+                        <p style="font-size: 0.8rem; font-style: italic;">FILE: A University of Vermont student walks toward a tent leading to a COVID-testing site on campus in Burlington, Vt. </p>
+                        <hr>
+                        <blockquote>
+                          <p>"I definitely do want to get the vaccine myself," Arizona State University (ASU), undergrad Alexis Rodriguez told Fox News, "just because my current work requires me to be around people and organize the community…as well as for my parents"</p>
+                        </blockquote>
+                        <p>Rodriguez, who's studying social justice and human rights, is eager to return to campus. "Now that people are starting to get the vaccine, I'm starting to feel a little bit more comfortable wanting to go back in person."</p>
+                        <p>However, not all students are so eager to the vaccine. Bryan Flores, an information security and business undergrad at ASU says he will most likely get the vaccine eventually, but not yet.</p>
+                        <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2021/03/1862/1048/COLLEGE-STUDENT.jpg?ve=1&tl=1" alt="covid-19-vaccine-in-university-img" style="max-width:100%;"><br><br>
+                        <p style="font-size: 0.8rem; font-style: italic;">ASU Undergrad Bryan Flores says he's on the fence about getting the COVID-19 vaccine. He says he would prefer those who are elderly and vulnerable to get it first and eventually he will too (Stephanie Bennett/Fox News). </p>
+                        <hr>
+                        <blockquote>
+                            <p>"It’s something that I’m on the fence about because I don't really feel that I need it at this moment," said Flores. "[Covid-19] is more dangerous for older people so I feel like they should be the ones that should get it first, and then at one point I will get it."</p>
+                        </blockquote>
+                        <p>Flores says he is not alone in this way of thinking. </p>
+                        <blockquote>
+                            <p>"I have friends that definitely don't want it, they think that it's fake, and they don't want any part in it," said Flores.</p>
+                        </blockquote>
+                        <p>But like so many people, he admitted he also has friends "that are really interested in getting it because they care, they want to protect their families." </p>
+                        <p>However, it may not be a choice for long. Rutgers University in New Jersey, was the first institution of higher learning to announce it will require all on-campus students to be fully vaccinated before the fall semester begins.</p>
+                        <p>The university -- with more than 76,000 students spread among four campuses -- said students may request an exemption from the vaccination for medical or religious reasons.</p>
+                        <p>In Oklahoma, officials at the University of Oklahoma, Oklahoma State University, and the University of Central Oklahoma told the Associated Press they have no current plans for a vaccine mandate for their students.</p>
+                        <p>At the University of Arizona, administrators say they’ll keep things optional, for now.</p>
+                        <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2021/03/1862/1048/vaccine.jpg?ve=1&tl=1" alt="covid-19-vaccine-in-university-img" style="max-width:100%;"><br><br>
+                        <p style="font-size: 0.8rem; font-style: italic;">Dr. Melanie Swift with the Mayo Clinic says all three vaccine options are safe for college-aged students and she highly recommends students get them, to not only protect themselves but the community (Stephanie Bennett/Fox News). </p>
+                        <hr>
+                        <blockquote>
+                            <p>"Because the vaccine is under an emergency use authorization, we can't mandate it. We're strongly encouraging," said university President Robert Robbins.</p>
+                        </blockquote>
+                        <p>Doctors with the Mayo Clinic are trying to alleviate fears over vaccine hesitancy. Dr. Melanie Swift says all three vaccines -- Pfizer, Moderna and Johnson & Johnson -- options are safe for college-aged students and she highly recommends students get them, to not only protect themselves but the community.</p>
+                        <blockquote>
+                            <p>"When colleges opened for on-campus learning back in the fall we had large outbreaks on college campuses so we know these students are susceptible to getting and transmitting the virus," said Dr. Swift. "If you're on the fence, and you want a normal life, you need to jump over the fence, this is the direction to a normal life."</p>
+                        </blockquote>
+                        <p>Out of all three vaccines, the Pfizer shot is the only one currently approved for 16 and17-year-olds.</p>
+                        <hr>
+                        <i>Fox News' Sthefany Rosales contributed to this report.</i>
+                      </div><!-- /.blog-post -->
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">COVID-19 vaccines provide ‘big backstop’ against fourth coronavirus surge, Gottlieb says</h2>
+                        <p class="blog-post-meta">March 30, 2021 by <a href="https://www.foxnews.com/person/f/madeline-farber">Madeline Farber</a><a href="https://www.foxnews.com/health/covid-19-vaccines-provide-backstop-against-fourth-coronavirus-surge-gottlieb"><i class="fas fa-external-link-alt"></i></a></p>
+                        <script type="text/javascript" src="https://video.foxnews.com/v/embed.js?id=6025576909001&w=466&h=263"></script><br>
+
+                        <p>The former commissioner of the U.S. Food and Drug Administration this week said that the rollout of the COVID-19 vaccine could provide a "pretty big backstop" against a fourth coronavirus surge. Dr. Scott Gottlieb’s comments came just one day before the head of the Centers for Disease Control and Prevention (CDC) in an emotional update warned the country of "impending doom" amid a recent increase in coronavirus cases and related hospitalizations. </p>
+                        <blockquote>
+                          <p>"We've now vaccinated 92 million Americans. It's about 28% of the public. About 50 million have been fully vaccinated, that's 15%," Gottlieb said on CBS News’ "Face the Nation" on Sunday. "So, I think that's a pretty big backstop against a true fourth surge."</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>"I think the Biden administration can allocate to parts of the country that look hot right now," continued Gottlieb. "But if we could just get two or three more weeks of around 3 million vaccines a day, that's going to be a pretty big backstop."</p>
+                        </blockquote>
+                        <p>During a White House press briefing on Monday, Walensky appeared to hold back tears as she expressed concerns the U.S. could soon bear witness to a fourth surge — even as the country is averaging some 2.7 million vaccinations per day. </p>
+                        <p>The U.S. in recent days surpassed 30 million cases of COVID-19, with the 7-day average of new cases around 60,000 — what Walenksy said represents about a 10% increase compared to the previous seven days. </p>
+                        <blockquote>
+                            <p>"Hospitalizations are up and deaths are slowly starting to rise with about 1,000 deaths per day," she said. </p>
+                        </blockquote>
+                        <blockquote>
+                            <p>"Now is one of those times when I have to share the truth and I have to hope and trust you will listen," Walensky continued. "I'm going to reflect on the recurring feeling I have of impending doom. We have so much to look forward to, so much promise and potential of where we are, and so much reason for hope, but right now, I'm scared… please hold on a little while longer."</p>
+                            <p>Walensky added that the "trajectory of the pandemic in the U.S. looks similar to other European states" such as Germany and France, where she said there is a "worrying spike in cases." </p>
+                            <p>"We can change the trajectory if we keep doing the right things. We don’t have the luxury of inaction, [we must] work now to prevent a fourth surge," she said. </p>
+                        </blockquote>
+                        <p>Her comments came the same day the federal health agency released a study that provides real-world evidence of what protections the Moderna and Pfizer vaccines provide. </p>
+                        <p>The vaccines, both created using mRNA technology, are "highly effective" in tamping down infections, including asymptomatic cases, according to the findings. </p>
+                        <p>The federal health agency examined results from a real-world vaccine rollout among nearly 4,000 at-risk essential workers, like healthcare staff and first responders, across six states from Dec. 14 to March 13, 2021.</p>
+                        <p>Results indicated a 90% drop in infection risk after participants were fully vaccinated, i.e. two weeks after they received second jabs developed by Pfizer or Moderna. The findings also underscored a high level of protection after just a single dose; participants’ risk of infection was cut by 80% two weeks after their initial vaccination.</p>
+                        <p>The findings were consistent with results from clinical trials conducted prior to the vaccines receiving emergency authorizations from the U.S. Food and Drug Administration, the CDC said. </p>
+                        <p>Gottlieb during his appearance on "Face the Nation" added that combatting vaccine hesitancy is the best way to get even more Americans vaccinated and ultimately prevent a fourth surge. </p>
+                        <blockquote>
+                            <p>"We should be looking at every single interaction that patients have with the medical system and trying to offer a vaccination at those points of care through a provider that patients know," Gottlieb said. "That's ultimately how we're going to get some people who are more hesitant about being vaccinated to take up the vaccine."</p>
+                        </blockquote>
+                        <hr>
+                        <i>Fox News' Kayla Rivas contributed to this report. </i>
+                      </div><!-- /.blog-post -->
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">W.H.O. Inquiry on the Pandemic’s Origin: What We Know</h2>
+                        <p class="blog-post-meta">March 30, 2021 by <a href="https://www.nytimes.com/by/javier-c-hernandez">Javier C. Hernández</a><a href="https://www.nytimes.com/2021/03/30/world/asia/who-covid-china.html?searchResultPosition=2"><i class="fas fa-external-link-alt"></i></a></p>
+                        <p>More than a year after the coronavirus pandemic began, the World Health Organization released a report on Tuesday laying out theories on how the virus first spread to humans — but it is already raising more questions than answers, including from the health body’s own leader.</p>
+                        <p><a href="https://www.nytimes.com/2021/03/29/world/asia/china-virus-WHO-report.html">This report</a>, drafted by a 34-member team of Chinese scientists and international experts who led a mission to Wuhan, China, examines a series of politically contentious questions, including whether the virus might have accidentally emerged from a Chinese laboratory.</p>
+                        <p>Some members of the expert team have raised concerns about China’s refusal to share raw data about early Covid-19 cases. In an unusual move, Dr. Tedros Adhanom Ghebreyesus, the W.H.O.’s director-general, acknowledged those concerns while speaking about the report on Tuesday. He said he hoped future studies would include “more timely and comprehensive data sharing.”</p>
+                        <p>Here’s what we know about the <a href="https://www.who.int/health-topics/coronavirus/origins-of-the-virus">report</a>.</p>
+                        <img src="https://static01.nyt.com/images/2021/03/30/world/30who-wuhan2/merlin_172442358_fff5bb4d-10c6-4da7-86f8-79f6afca9967-jumbo.jpg?quality=90&auto=webp" alt="covid-19-vaccine-in-university-img" style="max-width:100%;"><br><br>
+                        <p style="font-size: 0.8rem; font-style: italic;">The Wuhan Institute of Virology laboratory, center, that has been accused of being the source of Covid-19. (Hector Retamal/Agence France-Presse — Getty Images)</p>
+                        <hr>
+                        <h3>The experts dismissed a lab leak theory.</h3>
+                        <p>For months, scientists, politicians and others outside China have promoted the theory that the virus might have emerged after a laboratory accident in China. While many experts doubt this theory, they have urged the W.H.O. team to rigorously investigate the possibility.</p>
+                        <p>The report dismisses the lab leak theory outright, calling it “extremely unlikely.” The experts largely base their conclusion on conversations with scientists in Wuhan.</p>
+                        <p>But Dr. Tedros, the W.H.O. chief, took the unexpected step of publicly raising doubts, saying that the theory required further investigation and that he was ready to deploy more experts to do so.</p>
+                        <blockquote>
+                            <p>“I do not believe that this assessment was extensive enough,” he said on Tuesday at a briefing for member states on the report, according to prepared remarks released to the news media. “Further data and studies will be needed to reach more robust conclusions.”</p>
+                        </blockquote>
+                        <p>The experts had said that officials at the Wuhan Institute of Virology, which houses a state-of-the-art laboratory known for its research on bat coronaviruses, assured them that they were not handling any viruses that appeared to be closely related to the coronavirus that caused the recent pandemic, according to meeting notes included in the report. They also said that staff members had been trained in security protocols.</p>
+                        <p>The report noted that a separate laboratory run by the Wuhan Center for Disease Control and Prevention had moved in late 2019 to a new location near the Huanan Seafood Wholesale Market in Wuhan, where many early cases of Covid-19 emerged. The expert team said that there appeared to be no connection, writing that the lab had not reported any “disruptions or incidents caused by the move” and had not been doing research on coronaviruses.</p>
+                        <p>Some critics have suggested that the team seemed to take the Chinese official position at face value and did not adequately investigate lab officials’ assertions.</p>
+                        <p>Raina MacIntyre, who heads the biosecurity program at the Kirby Institute of the University of New South Wales in Sydney, Australia, said the report seemed to dismiss the idea of a lab leak “without strong evidence.”</p>
+                        <p>“A lab accident is certainly a possibility,” she said.</p>
+
+                        <img src="https://static01.nyt.com/images/2021/03/30/world/30who-wuhan4/merlin_182959434_bb196591-171e-4909-abee-cf10889981e2-jumbo.jpg?quality=90&auto=webp" alt="covid-19-vaccine-in-university-img" style="max-width:100%;"><br><br>
+                        <p style="font-size: 0.8rem; font-style: italic;">A wet market in Wuhan in January. (Gilles Sabrié for The New York Times)</p>
+                        <hr>
+                        <h3>The role of animal markets is still unclear.</h3>
+                        <p>The expert team concluded that the coronavirus probably emerged in bats before spreading to humans through an intermediate animal. But the team said there was not enough evidence to identify the species or to pinpoint where the spillover of the virus from animals first occurred.</p>
+                        <p>Early in the pandemic, Chinese officials floated theories suggesting that the coronavirus outbreak might have started at the Huanan market. More than a year later, the role of animal markets in the story of the pandemic is still unclear, according to the report.</p>
+                        <p>The expert team found that many early cases had no clear connection to Huanan market, which sold sika deer, badgers, bamboo rats, live crocodiles and other animals, according to vendor records cited in the report.</p>
+                        <p>Among those initial confirmed cases, about 28 percent had links to the Huanan market and 23 percent were tied to other markets in Wuhan, while 45 percent had no history of market exposure, according to the report.</p>
+                        <blockquote>
+                            <p>“No firm conclusion therefore about the role of the Huanan market in the origin of the outbreak, or how the infection was introduced into the market, can currently be drawn,” the report says.</p>
+                        </blockquote>
+                        <p>It says that further studies of farms and wild animals in China are needed, and that more clues about the markets’ role may emerge.</p>
+
+                        <img src="https://static01.nyt.com/images/2021/03/30/world/30who-wuhan4-sub/merlin_182959335_b1a94231-7ef0-469c-b613-fcb51df679cc-jumbo.jpg?quality=90&auto=webp" alt="covid-19-vaccine-in-university-img" style="max-width:100%;"><br><br>
+                        <p style="font-size: 0.8rem; font-style: italic;">Along the banks of the Yangtze River in Wuhan. (Gilles Sabrié for The New York Times)</p>
+                        <hr>
+                        <h3>The inquiry’s success will depend on China.</h3>
+                        <p>The expert team offers a long list of recommendations for additional research: more testing of wildlife and livestock in China and Southeast Asia, more studies on the earliest cases of Covid-19 and more tracing of pathways from farms to markets in Wuhan.</p>
+                        <p>But it is unclear whether China, which has repeatedly hindered the W.H.O. inquiry, will cooperate. Chinese officials have sought to redirect attention elsewhere, suggesting that the virus could have emerged in the United States or other countries.</p>
+                        <p>Experts say the delays in the inquiry have hurt the ability to prevent other pandemics.</p>
+                        <p>“This delay has obviously compromised the ability of the investigation to reconstruct the origins of Covid-19 and identify ways of reducing the risk of such events happening again in the future,” said Michael Baker, a professor of public health at the University of Otago in New Zealand.</p>
+                        <hr>
+                        <i>Javier C. Hernández is a China correspondent. He has covered the rise of the authoritarian state under Xi Jinping, the spread of social causes like the #MeToo movement and the plight of China’s most vulnerable citizens, including migrant workers and pollution victims. </i>
+                      </div><!-- /.blog-post -->
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="list-group-item list-group-item-action active list-group-item-dark" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Vaccines & Students</h5>
+                        <small>1 minutes ago</small>
+                      </div>
+                      <p class="mb-1">COVID-19 vaccinations might become mandatory at colleges and universities.</p>
+                      <small>Students are left divided on whether to get the shot or not.</small>
+                  </a>
+                  <a class="list-group-item list-group-item-action list-group-item-dark" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Big Backstop</h5>
+                        <small>4 minutes ago</small>
+                      </div>
+                      <p class="mb-1">COVID-19 vaccines provide ‘big backstop’ against fourth coronavirus surge, Gottlieb says.</p>
+                      <small>His comments came as federal health officials fear a fourth coronavirus surge.</small>
+                  </a>
+                  <a class="list-group-item list-group-item-action list-group-item-dark" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                    <img src="https://static01.nyt.com/images/2021/03/30/science/30virus-mixvax-1/merlin_185207331_2c05bb47-7842-41b9-afbb-7d0162d47b40-mediumThreeByTwo252.jpg" alt="" style="width:100%"><br><br>
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">W.H.O.</h5>
+                        <small>6 minutes ago</small>
+                      </div>
+                      <p class="mb-1">W.H.O. Inquiry on the Pandemic’s Origin: What We Know.</p>
+                      <small>Did Covid-19 come from animal markets? It’s unclear. Did it emerge from a lab? Also unclear. Here’s what a new W.H.O. report says — including questions that the agency’s own chief raised about the findings.</small>
+                  </a>
+                  
+                </div>
+            </div>
+        </div>
+
+        <h4>TODAY'S PHOTO</h4><hr style="border-color: black">
+        
+        <!-- Headline News -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000" data-pause="hover">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" style="height: 20rem;" >
+              <div class="carousel-item active" >
+                <img class="d-flex justify-content-center w-100 h-100" src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="First slide" >
+              </div>
+              <div class="carousel-item" >
+                <img class="d-flex justify-content-center w-100 h-100" src="https://images.unsplash.com/photo-1537387788952-cffe9f8d3090?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" alt="Second slide"  >
+              </div>
+              <div class="carousel-item">
+                <img class="d-flex justify-content-center w-100 h-100" src="https://images.unsplash.com/photo-1473172707857-f9e276582ab6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" alt="Third slide"  style="height: 20rem;">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <br><br><h4>TODAY'S WEATHER</h4><hr style="border-color: black">
+
+        <!-- Weather Report -->
+        <div class="card" style="color: white;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url('<%= backgroundUrl %>');
+            margin-bottom: 1rem;">
+            <!-- <div class="card-header" style="opacity: 1">Weather Report</div> -->
+            <div class="card-body" style="
+            display: flex;
+            align-items: center;
+            justify-content: center;">
+                <div class="row">
+                    <div class="col-sm" style="text-align: center;">
+                        <!-- <h1 style="font-size: 10rem"> <%= weather.main.temp %>°</h1> -->
+                        <h1 style="font-size: 10rem"> <%= temp %>°</h1>
+                        <h6><%= weather.name %>, <%= weather.sys.country %></h6>
+                    </div>
+                    <div style="border-left: 3px solid white; height: 13rem; margin: 30px;"></div>
+                    <div class="col-sm">
+                        <img class="weather-icon" src="http://openweathermap.org/img/wn/<%= weather.weather[0].icon %>@2x.png" alt="">
+                        <h1><%= weather.weather[0].main %></h1>
+                        <p >
+                            <span style="display: inline;"><%= weather.main.temp_min %> °</span> | 
+                            <span style="display: inline;"><%= weather.main.temp_max %> °</span><br>
+                            Feels Like <span><%= weather.main.feels_like %> °</span><br>
+                            Humidity <span><%= weather.main.humidity %></span><br>
+                        </p>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Chat</h1>
+          
+              <label for="msg"><b>Message</b></label>
+              <textarea placeholder="Type message.." name="msg" required></textarea>
+          
+              <button type="submit" class="btn chat-btn">Send</button>
+              <button type="button" class="btn chat-btn cancel" onclick="closeForm()">Close</button>
+                
+            </form>
+        </div> -->
+
+    </div>
+</main>
+
+<!-- weather api JS
+<script>
+    $(".weather-icon").html("<img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png' alt='Icon depicting current weather.'>");
+</script> -->

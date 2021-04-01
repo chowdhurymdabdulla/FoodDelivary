@@ -1,0 +1,34 @@
+<main class="d-flex align-items-center min-vh-100 py-3 py-md-0"> 
+    <div class="container"> 
+        <div class="row">
+            <div class="login-logo col-md-6">
+                <img src="logo.png" alt="update-24x7-logo" style="margin:10px">
+            </div>
+            <div class="card login-card col-md-6"> 
+                <div class="row no-gutters"> 
+                    
+                    <div class="card-body"> 
+                        <p class="login-card-description">Sign into your account</p > 
+                        <form action="/auth/login" method="POST"> 
+                        <div class="form-group"> 
+                        <label for="text" class="sr-only">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Username" required> 
+                        </div> 
+                        <div class="form-group mb-4"> 
+                        <label for="password" class="sr-only">Password</label> 
+                        <input type="password" name="password" id="password" class="form-control" placeholder="***********" required> 
+                        </div> 
+                        <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login"> 
+                        </form> 
+                        
+                        <p class="login-card-footer-text">Don't have an account? <a href="/register" class="text-reset">Register here</a ></p > 
+                        <nav class="login-card-footer-nav"> 
+                            <a href="#!" style="margin-right: 10px">Terms of Use</a > 
+                            <a href="#!" style="margin-left: 10px">Privacy Policy</a >
+                        </nav> 
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+    </div>    
+</main>
